@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="card-deck">
+    <div class=" card card-header text-center  bg-gradient-red mb-lg-4 " style="max-width: 20rem;height:auto">       
+        <div class="card-body">
+            <h5 class="align-self-md-center"style="font-size:x-large; color:darkred">Toplam Kategori <br />Sayısı  </h5>
+            <br />
+            <h5 class="text-center" style="font-size:xx-large; color:darkred"> @ViewBag.CategoryCount</h5>
+        </div>
+    </div>
+    <div class=" card card-header text-center  bg-gradient-navy mb-lg-4 " style="max-width: 20rem;height:auto">
+        <div class="card-body">
+            <h5 class="align-self-md-center" style="font-size:x-large; color:lightskyblue">Yazılım Kategorisi Başlık Sayısı</h5>
+            <br />
+            <h5 class="text-center " style="font-size:xx-large; color:lightblue"> @ViewBag.SoftwareTitleCount</h5>
+        </div>
+    </div>
+    <div class=" card card-header text-center  bg-gradient-olive mb-lg-4 " style="max-width: 20rem;height:auto">
+        <div class="card-body">
+            <h5 class="align-self-md-center" style="font-size:x-large; color:darkgreen">Yazarların İsimlerinde "a" Harfi Bulunanlar</h5>
+            <br />
+            <h5 class="text-center" style="font-size:xx-large; color:darkgreen"> @ViewBag.lettera</h5>
+        </div>
+    </div>
+</div>
+<div class="card-deck">
+    <div class=" card card-header text-center  bg-gradient-gray-dark mb-lg-4 " style="max-width: 20rem;height:auto">
+        <div class="card-body">
+            <h5 class="align-self-md-center"  style="font-size:x-large; color:darkgrey">En Fazla Başlığı Olan Kategori Adı</h5>
+            <br />
+            <h5 class="text-center"style="font-size:xx-large; color:darkgrey"> @ViewBag.headings</h5>
+        </div>
+    </div>
+    <div class="card card-header text-center bg-gradient-orange mb-lg-4 " style="max-width: 20rem; height:auto">   
+        <div class="card-body">
+            <h5 class="align-self-md-center" style="font-size:x-large; color:saddlebrown">Kategori Tablosunda Durumu T/F Olan Farkı </h5>
+            <br />
+            <h5 class="card-text"style="font-size:xx-large; color:saddlebrown"> @ViewBag.statu</h5>
+        </div>
+    </div>
+</div>
+
